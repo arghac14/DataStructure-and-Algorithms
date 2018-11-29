@@ -16,8 +16,7 @@ void selection(int a[] ,int n){
 		a[i]=a[min];
 		a[min]=temp;
 	}
-	
-}
+	}
 void bubble(int a[],int n){
 	int i,j,temp;
 	for(i=0;i<n-1;i++){
@@ -28,23 +27,18 @@ void bubble(int a[],int n){
 				a[j+1]=temp;
 			}
 			}
-		}
-		
+		}		
 	}
 void insertion(int a[],int n)
 {
 	int i,k,j;
 	for (i = 1 ; i <= n - 1; i++) {
     		k = i;
- 
     	while ( k > 0 && a[k-1] > a[k]) {
      	 temp= a[k];
      	 a[k]   = a[k-1];
      	 a[k-1] = temp;
- 
-     	 k--;
-	
-	
+ 	k--
 }
 int main(){
 	int i,a[MAX],n,c;
