@@ -34,13 +34,15 @@ void bubble(int a[],int n){
 void insertion(int a[],int n)
 {
 	int i,k,j;
-	for(i=1;i<n;i++){
-		k=a[i];
-		for(j=i-1;j=0 && j<a[j];j--){
-			a[j+1]=a[j];
-		}
-		a[j+1]=k;
-	}	
+	for (i = 1 ; i <= n - 1; i++) {
+    		k = i;
+ 
+    	while ( k > 0 && a[k-1] > a[k]) {
+     	 temp= a[k];
+     	 a[k]   = a[k-1];
+     	 a[k-1] = temp;
+ 
+     	 k--;
 	
 	
 }
